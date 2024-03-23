@@ -41,6 +41,13 @@ class HomeScreen extends StatelessWidget {
               },
               child: Text('Buscar Vehículo'),
             ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/borrar_vehiculo');
+              },
+              child: Text('Borrar Vehículo'),
+            ),
           ],
         ),
       ),

@@ -6,6 +6,8 @@ import 'package:examen2_grupo4/presentation/screens/home/home_screen.dart';
 import 'package:examen2_grupo4/presentation/screens/ver/ver_vehiculos_screen.dart';
 import 'package:examen2_grupo4/presentation/screens/agregar/agregar_vehiculo_screen.dart';
 import 'package:examen2_grupo4/presentation/screens/buscar/buscar_vehiculo_screen.dart';
+import 'package:examen2_grupo4/presentation/screens/borrar/borrar_screen.dart'; 
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,6 +26,7 @@ class MainApp extends StatelessWidget {
         '/': (context) => HomeScreen(),
         '/ver_vehiculos': (context) => VerVehiculosScreen(),
         '/buscar_vehiculo': (context) => BuscarVehiculoScreen(),
+        '/borrar_vehiculo': (context) => BorrarVehiculoScreen(),
       },
     );
   }
