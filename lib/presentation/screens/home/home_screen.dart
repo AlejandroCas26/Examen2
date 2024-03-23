@@ -25,7 +25,9 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/ver_vehiculos');
               },
-              child: Text('Ver Vehículos'),
+              child: Text(
+                'Ver Vehículos',
+              ),
             ),
             SizedBox(height: 20),
             ElevatedButton(

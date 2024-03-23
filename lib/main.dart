@@ -29,8 +29,8 @@ class MainApp extends StatelessWidget {
         '/': (context) => const HomeScreen(),
         '/agregar_vehiculo': (context) => AgregarVehiculoScreen(),
         '/ver_vehiculos': (context) => VerVehiculosScreen(),
-        '/buscar_vehiculo': (context) => const BuscarVehiculoScreen(),
-        '/borrar_vehiculo': (context) => const BorrarVehiculoScreen(),
+        '/buscar_vehiculo': (context) => BuscarVehiculoScreen(),
+        '/borrar_vehiculo': (context) => BorrarVehiculoScreen(),
       },
     );
   }

@@ -16,11 +16,11 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: '/buscar_vehiculo',
-      builder: (context, state) => const BuscarVehiculoScreen(),
+      builder: (context, state) => BuscarVehiculoScreen(),
     ),
     GoRoute(
       path: '/borrar_vehiculo',
-      builder: (context, state) => const BorrarVehiculoScreen(),
+      builder: (context, state) => BorrarVehiculoScreen(),
     ),
   ],
 );
