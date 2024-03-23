@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center, 
           children: [
             SizedBox(
               height: 150,
@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
                 fit: BoxFit.cover, 
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 40), 
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/ver_vehiculos');
