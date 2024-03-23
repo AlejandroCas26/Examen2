@@ -12,7 +12,7 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: '/ver_vehiculos',
-      builder: (context, state) => const VerVehiculosScreen(),
+      builder: (context, state) => VerVehiculosScreen(),
     ),
     GoRoute(
       path: '/buscar_vehiculo',
