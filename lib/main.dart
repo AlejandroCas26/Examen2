@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:examen2_grupo4/core/router/app_router.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp( MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  static final routes = <String, WidgetBuilder>{
+    '/': (BuildContext context) => const HomeScreen (),
+  
+  };
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+      debugShowCheckedModeBanner: false,
+      title: 'Autos',
+      routes: routes, 
     );
   }
 }
+
