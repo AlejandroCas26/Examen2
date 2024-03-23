@@ -14,10 +14,7 @@ final GoRouter router = GoRouter(
       path: '/ver_vehiculos',
       builder: (context, state) => VerVehiculosScreen(),
     ),
-    GoRoute(
-      path: '/agregar_vehiculo',
-      builder: (context, state) => AgregarVehiculoScreen(),
-    ),
+   
     GoRoute(
       path: '/buscar_vehiculo',
       builder: (context, state) => BuscarVehiculoScreen(),

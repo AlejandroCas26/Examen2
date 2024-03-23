@@ -19,7 +19,6 @@ class MainApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/ver_vehiculos': (context) => VerVehiculosScreen(),
-        '/agregar_vehiculo': (context) => AgregarVehiculoScreen(),
         '/buscar_vehiculo': (context) => BuscarVehiculoScreen(),
       },
     );
