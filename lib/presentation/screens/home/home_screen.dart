@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 150,
@@ -23,24 +23,28 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                Navigator.pushNamed(context, '/ver_vehiculos');
               },
               child: Text('Ver Vehículos'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                 Navigator.pushNamed(context, '/agregar_vehiculo');
               },
               child: Text('Agregar Vehículo'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                Navigator.pushNamed(context, '/buscar_vehiculo');
               },
               child: Text('Buscar Vehículo'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                Navigator.pushNamed(context, '/otra_operacion');
               },
               child: Text('Otra Operación'),
             ),
